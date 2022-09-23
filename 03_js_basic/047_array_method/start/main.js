@@ -5,5 +5,11 @@ for(let i = 0; i < arry.length; i++){
   newArry.push(arry[i] * 2)
 }
 
-console.log(newArry)
-const newArry2 = arry.map(val => val * 2)
+console.log(newArry);
+
+const newArry2 = arry.map((val, i, arry) => {
+  console.log(arry)
+  return val * 3;
+});
+
+console.log(newArry2)
